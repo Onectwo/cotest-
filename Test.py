@@ -1,5 +1,11 @@
+import numpy as np 
+
 print('Welcome to the COBOX TEST')
 
-for i in range(0, 3):
-    var = input("The test nr. 1 " + str(i)+" ")
-    print("The test nr.  " + str(i) + " is " + str(var))
+a = []
+for i in range(0, 21):
+    var = input(" The test result "+str(i+1)+ "   ")
+    a.append(var)
+    #print("The test nr.  " + str(i+1) + " is " + str(var))
+
+print("The test outcome is:", np.array(a).T)
